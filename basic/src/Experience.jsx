@@ -10,10 +10,17 @@ export default function Experience() {
   const groupRef = useRef();
   const { camera, gl } = useThree();
 
-  //   useFrame((state, delta) => {
-  //     cubeRef.current.rotation.y += delta;
-  //     groupRef.current.rotation.y += delta;
-  //   });
+  useFrame((state, delta) => {
+    // 카메라 애니매이션
+    // const angle = state.clock.elapsedTime;
+    // state.camera.position.x = Math.sin(angle) * 8;
+    // state.camera.position.z = Math.cos(angle) * 8;
+    // state.camera.lookAt(0, 0, 0);
+    // mesh 애니매이션
+    //   cubeRef.current.rotation.y += delta;
+    // group 애니매이션
+    //   groupRef.current.rotation.y += delta;
+  });
 
   return (
     <>
